@@ -4,6 +4,9 @@ let index = 0;
 let input = document.querySelector('input');
 let output = document.querySelector('#ouput');
 
+
+input.addEventListener('keydown', (e) => output.innerHTML = e.which || e.detail);
+
 function onKeyDownHandler(e) {
   const key = parseInt(e.detail || e.which);
   
